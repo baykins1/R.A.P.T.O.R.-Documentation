@@ -1,0 +1,28 @@
+# =================================================================
+# R.A.P.T.O.R. Combined Dataset Configuration
+# =================================================================
+
+# Path to the root directory of the combined dataset.
+# The '..' means "go up one directory from where we are running this".
+# Since we'll run from yolov8/, this path correctly points to the dataset.
+path: ../datasets/RAPTOR-Combined
+
+# Relative paths to the training and validation image folders.
+train: images/train
+val: images/val
+
+# --- CLASS DEFINITION ---
+# This MUST match the class IDs defined in our combination script.
+
+# Number of classes
+nc: 7
+
+# Class names, in order from 0 to 6
+names:
+  - person
+  - plane
+  - helicopter
+  - small-vehicle
+  - large-vehicle
+  - ship
+  - structure
